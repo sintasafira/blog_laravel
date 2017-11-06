@@ -5,9 +5,14 @@ use App\Http\Controllers\Controller;
 use Auth;
 class AdminLoginController extends Controller
 {
+public function logout()
+{
+Auth::guard('admin')->logout();
+return redirect('/');
+}
 public function __construct()
 {
-$this->middleware('guest:admin');
+$this->middleware('guest:admin', ['except'=> ['logout']]);
 }
 function showLoginForm()
 {
