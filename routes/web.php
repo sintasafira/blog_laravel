@@ -54,3 +54,5 @@ Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.subm
 Route::get('/', 'AdminController@index')->name('admin.dashboard');
 Route::post('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 });
+
+Route::resource('manageadmins', 'ManageAdminController');
