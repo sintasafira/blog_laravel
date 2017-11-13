@@ -56,3 +56,7 @@ Route::post('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout')
 });
 
 Route::resource('manageadmins', 'ManageAdminController');
+
+Route::get('upload',['as'=>'upload.index','uses'=>'UploadController@index']);
+Route::get('upload/create',['as'=>'upload.create','uses'=>'UploadController@create']);
+Route::post('upload',['as'=>'upload.store','uses'=>'UploadController@store']);

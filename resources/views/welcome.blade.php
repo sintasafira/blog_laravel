@@ -86,6 +86,7 @@
                    <a href="tentang">tentang</a>
 				   <a href="percakapan">percakapan</a>
 				   <a href="template">templating</a>
+				   <a href="upload">Upload</a>
                 </div>
             </div>
         </div>
